@@ -5,67 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <div>            
-            <img src="../images/logo_chico.JPG" alt="logo chico" title="logo chico">
+    <header class="header row">
+        <div class="col-sm-12 col-md-3">            
+            <img class="img-fuid" src="../images/logo_chico.JPG" alt="logo chico" title="logo chico">
         </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="bikes_for_sale.html">Bikes for Sale</a></li>
-                <li><a href="kkulifestile.html">KKU Lifestile</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="bikes_for_sale.html"><img src="../images/carrito.JPG" alt="carrito" title="carrito"></a></li>
+        <nav class="col">
+            <ul class="row">
+                <li class="col"><a href="../index.html">Home</a></li>
+                <li class="col"><a href="nosotros.html">Nosotros</a></li>
+                <li class="col"><a href="bikes_for_sale.html">Bikes for Sale</a></li>
+                <li class="col"><a href="kkulifestile.html">KKU Lifestile</a></li>
+                <li class="col"><a href="contacto.html">Contacto</a></li>                    
             </ul>
         </nav>
+        <div class="col-sm-12 col-md-2">
+            <a href="bikes_for_sale.html"><img class="img-fuid" src="../images/carrito.JPG" alt="carrito" title="carrito"></a>
+        </div> 
     </header>
-    <div>
-        <h2>Contacto</h2>
-        <section>
-            <form action="">
-                <fieldset>
-                    <label for="Nombre">Nombre</label>
-                    <input type="text " name="Nombre">
-                    <label for="Telefono">Telefóno</label>
-                    <input type="number" name="Telefono" placeholder="+(código país) - Número" title="Por favor ingresa solo números">
-                    <label for="mail">Email</label>
-                    <input type="email" name="email">
-                    <label for="tipoArticulo">Nos contactas por:</label>
-                    <input type="checkbox" value="Motos" name="chkMotos">Motos
-                    <input type="checkbox" value="Autos" name="chkAutos">Autos
-                    <input type="checkbox" value="Merchandising" name="merchandising"> Merchandising 
-                    <label for="adheridoKKU">Aderido al plan KKU Lifestile</label>
-                    <input type="radio" name="rbutSi">Si
-                    <input type="radio" name="rbutNo" checked>No 
-                    <label for="quieroAdeherirme">Quieres Adherirte al plan?</label>
-                    <select name="AdherirAKku" id="">
-                        <option value="si">Si</option>
-                        <option value="no">No</option>
-                    </select>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" placeholder="Escribenos aquí tu mensaje" cols="30" rows="10"></textarea>
-                    <input type="submit" name="enviarForm">
-                    <input type="reset" name="limparForm">
-                </fieldset>  
-            </form>
-        </section>
+    <div class="container-fluid">
+        <div class="row">
+            <section class="row estilo__seccion">
+            <h2>Formulario de contacto</h2>
+            </section>
+            <section class="col estilo__seccion">         
+                <form>
+                    <div class="row">
+                        <div class="col estilo__contacto">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                        </div>
+                        <div class="col estilo__contacto">
+                        <input type="email" class="form-control" placeholder="Correo electrónico" aria-label="mail">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col estilo__contacto">
+                            <input type="number" class="form-control" placeholder="Telefono" aria-label="Telefono" title="Por favor ingresa solo números">
+                        </div>                    
+                        <div class="col estilo__contacto">
+                            <input type="text" class="form-control" placeholder="Asunto" aria-label="asunto">
+                        </div>
+                    </div>
+                    <div class="row estilo__contacto">
+                        <textarea class="form-control" name="mensaje" placeholder="Mensaje"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-outline-dark" name="enviarForm"><img src="../images/done_black_36dp.svg" alt=""></button>
+                        <button type="reset" class="btn btn-outline-dark" name="limpiarForm"><img src="../images/delete_outline_black_36dp.svg" alt=""></button>
+                    </div>
+                </form>
+            </section>
+        </div>
     </div>
-    <footer>
-        <div>
-            <a href="contacto.html">Contacto</a>
+    <footer class="row">
+        <div class="col-sm-12 col-md-4">
+            <a href="../pages/contacto.html">Contacto</a>
             <p>mail@kku.uy - +598 000 000</p>
             <a href="https://www.instagram.com/kustomkultureuruguay/"><img src="../images/logoinsta.JPG" alt=""></a>
             <a href="https://www.facebook.com/kustomkulturemotorcycles"><img src="../images/logofacebook.JPG" alt="facebook footer" title="facebook footer"></a>
         </div>
-        <div>
-            <img src="../images/logo_cuadrado.JPG" alt="kku footer" title="kku footer">
+        <div class="col-sm-12 col-md-4">
+            <img class="img-fuid" src="../images/logo_cuadrado.JPG" alt="kku footer" title="kku footer">
         </div>
-        <div>
+        <div class="col-sm-12 col-md-4">
             <p>BrainIT 2022 - Todos los derechos reservados</p>
         </div>          
     </footer>
+    <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>

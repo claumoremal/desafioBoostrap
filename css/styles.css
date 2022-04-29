@@ -1,10 +1,86 @@
 
-.header__div--logo{
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid black;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;500;600&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-
-
+a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    align-items: center;
+    background-color: black;    
+}
+nav ul{
+    align-items: center;  
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    text-decoration: none;    
+    text-transform: uppercase;
+}
+nav ul li a:hover{    
+    color: grey;
+}
+.estilo__seccion{
+    grid-area: section;
+    height: fit-content;
+    background-color: gray;
+    padding: 100px;
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+}
+.estilo__contacto{
+    height: fit-content;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+}
+.footer{
+    justify-content: space-between;
+    height: fit-content;
+    background-color: black;    
+    padding: 15px;
+    width: 100%;
+    margin: 0px;
+    color: white;
+}
+.footer{
+    background-color: black;    
+    padding: 15px;
+    width: 100%;
+    margin: 0px;
+    color: white;
+}
+.footer__izq{
+    color: white;
+    padding: 15px;
+}
+.footer__izq--a{
+    text-decoration: none;
+    color: white;
+}
+.footer__izq--a:hover{
+    text-decoration: none;
+    color: grey;
+}
+.footer__logo{ 
+    height: 150px;   
+    width: 150px;
+    padding: 10px;
+}
+.footer__der{
+    padding: 15px;
+}
 
 
